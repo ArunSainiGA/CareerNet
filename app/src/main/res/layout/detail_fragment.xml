@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Name:"
+            app:layout_constraintBottom_toTopOf="@+id/nameBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flag"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/capitalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Capital:"
+            app:layout_constraintBottom_toTopOf="@+id/capitalBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameBarrier" />
+
+        <TextView
+            android:id="@+id/regionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Region:"
+            app:layout_constraintBottom_toTopOf="@+id/regionBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/capitalBarrier" />
+
+        <TextView
+            android:id="@+id/subRegionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sub Region:"
+            app:layout_constraintBottom_toTopOf="@+id/subRegionBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regionBarrier" />
+
+        <TextView
+            android:id="@+id/populationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Population:"
+            app:layout_constraintBottom_toTopOf="@+id/populationBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subRegionBarrier" />
+
+        <TextView
+            android:id="@+id/areaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Area:"
+            app:layout_constraintBottom_toTopOf="@+id/areaBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/populationBarrier" />
+
+        <TextView
+            android:id="@+id/currencyLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Currency:"
+            app:layout_constraintBottom_toTopOf="@+id/currencyBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/areaBarrier" />
+
+        <TextView
+            android:id="@+id/languageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Language:"
+            app:layout_constraintBottom_toTopOf="@+id/languageBarrier"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencyBarrier" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameLabel"
+            app:layout_constraintStart_toEndOf="@+id/nameLabel"
+            app:layout_constraintTop_toTopOf="@+id/nameLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/capitalLabel"
+            app:layout_constraintStart_toEndOf="@+id/capitalLabel"
+            app:layout_constraintTop_toTopOf="@+id/capitalLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/regionLabel"
+            app:layout_constraintStart_toEndOf="@+id/regionLabel"
+            app:layout_constraintTop_toTopOf="@+id/regionLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/subRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/subRegionLabel"
+            app:layout_constraintStart_toEndOf="@+id/subRegionLabel"
+            app:layout_constraintTop_toTopOf="@+id/subRegionLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/populationLabel"
+            app:layout_constraintStart_toEndOf="@+id/populationLabel"
+            app:layout_constraintTop_toTopOf="@+id/populationLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/areaLabel"
+            app:layout_constraintStart_toEndOf="@+id/areaLabel"
+            app:layout_constraintTop_toTopOf="@+id/areaLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/currencyLabel"
+            app:layout_constraintStart_toEndOf="@+id/currencyLabel"
+            app:layout_constraintTop_toTopOf="@+id/currencyLabel"
+            tools:text="Some text \n Some more text" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/languageLabel"
+            app:layout_constraintStart_toEndOf="@+id/languageLabel"
+            app:layout_constraintTop_toTopOf="@+id/languageLabel"
+            tools:text="Some text \n Some more text" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/nameBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="name,nameLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/capitalBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="capital,capitalLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/regionBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="region,regionLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/subRegionBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="subRegion,subRegionLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/populationBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="population,populationLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/areaBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="area,areaLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/currencyBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="currency,currencyLabel"/>
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/languageBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="language,languageLabel"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
